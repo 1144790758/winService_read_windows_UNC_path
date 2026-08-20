@@ -1,0 +1,36 @@
+# ===== .NET 构建产物 =====
+bin/
+obj/
+publish/
+*.user
+*.suo
+
+# ===== Java 运行环境 / JDK（体积大，可重建）=====
+# jre25 由 jlink 从 jdk 提取，不入库；需要时按 DEPLOY.md 重新生成
+jre25/
+jdk-25/
+jre/
+jdk/
+
+# ===== Java 编译产物 =====
+*.class
+test-java/out/
+
+# ===== 运行时日志 =====
+logs/
+*.log
+
+# ===== 部署目录（若误建于项目内）=====
+MyService/
+deploy/
+
+# ===== IDE / 编辑器 =====
+.vs/
+.vscode/
+.idea/
+*.swp
+
+# ===== 操作系统 =====
+Thumbs.db
+Desktop.ini
+.DS_Store
